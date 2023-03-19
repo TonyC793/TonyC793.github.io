@@ -234,6 +234,26 @@ body {
 }
 
 
+/* For iPad Pro Max in landscape */
+@media screen and (min-device-width: 2048px) and (max-device-width: 2732px) and (orientation: landscape) {
+    .bg-image::before {
+        background-size: contain;
+        -webkit-background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+/* For iPad Pro Max in portrait */
+@media screen and (min-device-width: 2048px) and (max-device-width: 2732px) and (orientation: portrait) {
+    .bg-image::before {
+        background-size: contain;
+        -webkit-background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
 /* iPhone X, XS, 11 Pro, 12 Mini */
 @media screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
     .bg-image::before {
@@ -297,6 +317,7 @@ body {
         background-repeat: no-repeat;
     }
 }
+
 
  /* iPad Pro 12.9" (1st, 2nd, 3rd, 4th, 5th generation) */
 @media screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -405,8 +426,10 @@ body {
 
 
 
-/* For iPad Pro Max in landscape */
-@media screen and (min-device-width: 2048px) and (max-device-width: 2732px) and (orientation: landscape) {
+
+
+
+/* @media (max-width: 768px) {
     .bg-image::before {
         background-size: 100%;
         -webkit-background-size: 100%;
@@ -414,32 +437,13 @@ body {
     }
 }
 
-/* For iPad Pro Max in portrait */
-@media screen and (min-device-width: 2048px) and (max-device-width: 2732px) and (orientation: portrait) {
-    .bg-image::before {
-        background-size: 100%;
-        -webkit-background-size: 100%;
-        background-repeat: no-repeat;
-    }
-}
-
-/* For tablets and smaller devices */
-@media (max-width: 768px) {
-    .bg-image::before {
-        background-size: 100%;
-        -webkit-background-size: 100%;
-        background-repeat: no-repeat;
-    }
-}
-
-/* For mobile devices */
 @media (max-width: 480px) {
     .bg-image::before {
         background-size: 100%;
         -webkit-background-size: 100%;
         background-repeat: no-repeat;
     }
-}
+} */
 
 
 
