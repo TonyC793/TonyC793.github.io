@@ -1964,12 +1964,13 @@ form label.error {
 }
 
 .intro-media {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     display: block;
     top: 0;
     left: 0;
-    height: 100vh;
+
 }
 
 
