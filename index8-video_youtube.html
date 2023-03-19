@@ -100,8 +100,30 @@
             <!--End Header-->
 
             <!--Intro Section-->
-            <section id="intro" class="intro-fullscreen bg-image" data-background-img="img/intro-video-bg.jpg">
+            <section id="intro" class="intro-fullscreen bg-image" id="bg-image-div" data-background-img="img/intro-video-bg.jpg">
                 <!--Video Hero-->
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                      var bgImageDiv = document.getElementById("bg-image-div");
+                  
+                      // Check if the current device is high resolution
+                      if (window.devicePixelRatio > 1) {
+                        // High resolution device
+                        bgImageDiv.classList.add("bg-image-highres");
+                      } else {
+                        // Normal resolution device
+                        bgImageDiv.classList.add("bg-image");
+                      }
+                    });
+                </script>
+
+
+
+
+
+
+
                 <div class="intro-media overlay-dark20">
                     <!-- youtube Video -->
                     <div id="video" class="ytp-player" data-property="{videoURL:'https://youtu.be/NiI9FbyB1Mo',containment:'#intro', showControls:false, autoPlay:true, loop:true, mute:true, startAt:6, opacity:1, addRaster:false, quality:'default'}"></div>

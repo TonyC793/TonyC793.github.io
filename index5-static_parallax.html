@@ -101,7 +101,33 @@
             <section id="intro" class="intro-fullscreen">
                 <!--Static Hero-->
                 
-                <div class="intro-media bg-image overlay-dark20 parallax parallax-background2" data-background-img="img/full/36.jpg"></div>
+                <div class="intro-media bg-image overlay-dark20 parallax parallax-background2" id="bg-image-div" data-background-img="img/full/36.jpg"></div>
+
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                      var bgImageDiv = document.getElementById("bg-image-div");
+                  
+                      // Check if the current device is high resolution
+                      if (window.devicePixelRatio > 1) {
+                        // High resolution device
+                        bgImageDiv.classList.add("bg-image-highres");
+                      } else {
+                        // Normal resolution device
+                        bgImageDiv.classList.add("bg-image");
+                      }
+                    });
+                </script>
+
+
+
+
+
+
+
+
+
+
 
                 <div class="intro-caption-waper dark-bg">
                     <div class="intro-full-height container">
