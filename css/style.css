@@ -165,6 +165,12 @@ body {
     color: #fff;
 }
 
+
+
+
+
+
+
 /* .bg-image {
 
     background-position: center center;
@@ -214,7 +220,7 @@ body {
 
 
 .bg-image {
-    position: relative;
+    position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -223,8 +229,8 @@ body {
 .bg-image::before {
     content: "";
     position: fixed;
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
     /* width: 100%;
     height: 100%; */
     background-position: center center;
@@ -263,19 +269,19 @@ body {
 } */
 
 /* iPhone XR, 11, 12, 13 */
-@media screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: landscape) {
     .bg-image::before {
-        background-size: 100%;
-        -webkit-background-size: 100%;
+        background-size: cover;
+        -webkit-background-size: cover;
         background-repeat: no-repeat;
     }
 }
 
 /* iPhone XS Max, 11 Pro Max, 12 Pro Max, 13 Pro Max */
-@media screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 3) {
+@media screen and (min-device-width: 414px) and (max-device-width: 896px) and (orientation: portrait) {
     .bg-image::before {
-        background-size: 100%;
-        -webkit-background-size: 100%;
+        background-size: cover;
+        -webkit-background-size: cover;
         background-repeat: no-repeat;
     }
 }
@@ -299,42 +305,42 @@ body {
 } */
 
 /* iPad Pro 10.5", Air 3 */
-@media screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+/* @media screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
     .bg-image::before {
         background-size: 100%;
         -webkit-background-size: 100%;
         background-repeat: no-repeat;
     }
-}
+} */
 
 
 /* iPad Pro 11", Air 4 */
-@media screen and (min-device-width: 834px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) {
+/* @media screen and (min-device-width: 834px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) {
 .bg-image::before {
         background-size: 100%;
         -webkit-background-size: 100%;
         background-repeat: no-repeat;
     }
-}
+} */
 
 
  /* iPad Pro 12.9" (1st, 2nd, 3rd, 4th, 5th generation) */
-@media screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+/* @media screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
 .bg-image::before {
         background-size: 100%;
         -webkit-background-size: 100%;
         background-repeat: no-repeat;
     }
-}
+} */
 
  /* iPad Pro 12.9" (6th generation)  */
-@media screen and (min-device-width: 1024px) and (max-device-width: 1392px) and (-webkit-min-device-pixel-ratio: 2) {
+/* @media screen and (min-device-width: 1024px) and (max-device-width: 1392px) and (-webkit-min-device-pixel-ratio: 2) {
 .bg-image::before {
         background-size: 100%;
         -webkit-background-size: 100%;
         background-repeat: no-repeat;
     }
-}
+} */
 
  /* Landscape orientation for iPads  */
 /* @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
