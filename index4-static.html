@@ -108,16 +108,20 @@
 
                 <script>
                     document.addEventListener("DOMContentLoaded", function() {
-                      var bgImageDiv = document.getElementById("bg-image-div");
-                  
-                      // Check if the current device is high resolution
-                      if (window.devicePixelRatio > 1) {
+                    var bgImageDiv = document.getElementById("bg-image-div");
+
+                    // Check if the current device is high resolution
+                    if (window.devicePixelRatio > 1) {
                         // High resolution device
                         bgImageDiv.classList.add("bg-image-highres");
-                      } else {
+                    } else {
                         // Normal resolution device
                         bgImageDiv.classList.add("bg-image");
-                      }
+                    }
+
+                    // Set the background image using the data-background-img attribute
+                    var imageUrl = bgImageDiv.getAttribute("data-background-img");
+                    bgImageDiv.style.backgroundImage = "url('" + imageUrl + "')";
                     });
                 </script>
 
@@ -134,7 +138,7 @@
                                 <div class="intro-img-circle">
                                     <img src="img/avatar01.jpg" alt="avatar01" />
                                 </div>
-                                <h1 class="intro-title mb-10"><span class="text-light">Hi!, 2223</span> Anthony</h1>
+                                <h1 class="intro-title mb-10"><span class="text-light">Hi!, 3000</span> Anthony</h1>
                                 <h6 class="page-title-alt color mb-45">Web Designer & Developer</h6>
                                 <a class="btn btn-lg btn-white scroll-down" href="#Statement1">Go My Resume</a>
                             </div>
