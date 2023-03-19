@@ -16,3 +16,6 @@ PC端一切正常，但在其他平台有几大问题：
 奇怪的点：
 1.intro视频只能在那种条件运行
 2.安卓上看到每张background图都是显示的正中间部分，除了parallax狗那张。但这张没什么特别，和前一张static，后一张也scroll的都很像。
+
+
+<div class="intro-media bg-image overlay-dark20" data-background-img="img/full/34.jpg"></div>

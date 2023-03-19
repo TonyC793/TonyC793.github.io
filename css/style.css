@@ -180,7 +180,7 @@ body {
 /* For tablets and smaller devices */
 @media (max-width: 768px) {
     .bg-image {
-        background-size: contain;
+        background-size: 100%;
         background-attachment: scroll;
     }
 }
@@ -188,7 +188,7 @@ body {
 /* For mobile devices */
 @media (max-width: 480px) {
     .bg-image {
-        background-size: contain;
+        background-size: 100%;
         background-attachment: scroll;
     }
 }
