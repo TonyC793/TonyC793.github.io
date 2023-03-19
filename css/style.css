@@ -150,9 +150,13 @@ body {
 }
 
 .bg-cover-section, .small-bg-cover-section {
-    -webkit-background-size: cover;
+
+
+/* -webkit-background- is the only thing changed compared to original */
+
+    /* -webkit-background-size: cover; */
     background-size: cover;
-    -webkit-background-position: top center;
+    /* -webkit-background-position: top center; */
     background-position: top center;
 }
 
@@ -165,10 +169,10 @@ body {
 }
 
 .bg-image {
-    -webkit-background-position: center center;
+    /* -webkit-background-position: center center; */
     background-position: center center;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
+    /* -webkit-background-size: cover; */
     background-size: cover;
     background-attachment: fixed;
 }
@@ -1970,12 +1974,13 @@ form label.error {
 
 
 .intro-media {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     display: block;
     top: 0;
     left: 0;
-    height: 100%;
+    
 
 }
 
