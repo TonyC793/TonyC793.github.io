@@ -213,7 +213,7 @@ body {
 
 .bg-image {
     position: relative;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
