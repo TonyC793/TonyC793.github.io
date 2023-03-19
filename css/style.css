@@ -181,7 +181,7 @@ body {
 @media (max-width: 768px) {
     .bg-image {
         background-size: 100%;
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
 
@@ -189,7 +189,7 @@ body {
 @media (max-width: 480px) {
     .bg-image {
         background-size: 100%;
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
 
