@@ -171,9 +171,17 @@ body {
 
 
 
-/* .bg-image, .bg-image-highres {
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+.bg-image, .bg-image-highres {
     position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 
   }
   
@@ -197,10 +205,21 @@ body {
   .bg-image-highres::before {
     background-size: contain;
   }
-   */
+  
 
 
-   html, body {
+
+
+
+
+
+
+
+
+
+
+
+   /* html, body {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -225,7 +244,7 @@ body {
   
   .bg-image-highres {
     background-size: contain;
-  }
+  } */
   
 
 
