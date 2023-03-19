@@ -171,31 +171,36 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -webkit-background-attachment: fixed;
+
 
 }
 
+.bg-image::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
 
 
 
 /* For tablets and smaller devices */
 @media (max-width: 768px) {
-    .bg-image {
+    .bg-image::before {
         background-size: 100%;
-        background-attachment: fixed;
-        -webkit-background-size: 100%;
-        -webkit-background-attachment: fixed;
     }
 }
 
 /* For mobile devices */
 @media (max-width: 480px) {
-    .bg-image {
+    .bg-image::before {
         background-size: 100%;
-        background-attachment: fixed;
-        -webkit-background-size: 100%;
-        -webkit-background-attachment: fixed;
     }
 }
 
