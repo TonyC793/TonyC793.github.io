@@ -165,19 +165,25 @@ body {
     color: #fff;
 }
 
-.bg-image {
+/* .bg-image {
 
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    -webkit-background-size: cover;
+    -webkit-background-attachment: fixed;
 
 
+} */
+
+.bg-image {
+    position: relative;
 }
 
 .bg-image::before {
     content: "";
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -194,6 +200,7 @@ body {
 @media screen and (min-device-width: 2048px) and (max-device-width: 2732px) and (orientation: landscape) {
     .bg-image::before {
         background-size: 100%;
+        -webkit-background-size: 100%;
     }
 }
 
@@ -201,6 +208,7 @@ body {
 @media screen and (min-device-width: 2048px) and (max-device-width: 2732px) and (orientation: portrait) {
     .bg-image::before {
         background-size: 100%;
+        -webkit-background-size: 100%;
     }
 }
 
@@ -208,6 +216,7 @@ body {
 @media (max-width: 768px) {
     .bg-image::before {
         background-size: 100%;
+        -webkit-background-size: 100%;
     }
 }
 
@@ -215,6 +224,7 @@ body {
 @media (max-width: 480px) {
     .bg-image::before {
         background-size: 100%;
+        -webkit-background-size: 100%;
     }
 }
 
