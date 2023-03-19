@@ -165,27 +165,6 @@ body {
     color: #fff;
 }
 
-/* .bg-image {
-
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -webkit-background-attachment: fixed;
-
-
-} */
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -194,6 +173,14 @@ body {
 
 
 .bg-image {
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg-image::before {
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
@@ -201,34 +188,28 @@ body {
     height: 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     z-index: -1;
 }
 
+
 /* For iPad Pro Max in landscape */
 @media screen and (min-device-width: 2048px) and (max-device-width: 2732px) and (orientation: landscape) {
-    .bg-image {
-        background-size: cover;
+    .bg-image::before {
+        background-size: 100%;
+        -webkit-background-size: 100%;
+        background-repeat: no-repeat;
     }
 }
 
 /* For iPad Pro Max in portrait */
 @media screen and (min-device-width: 2048px) and (max-device-width: 2732px) and (orientation: portrait) {
-    .bg-image {
-        background-size: cover;
+    .bg-image::before {
+        background-size: 100%;
+        -webkit-background-size: 100%;
+        background-repeat: no-repeat;
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -252,17 +233,19 @@ body {
 
 /* iPhone XR, 11, 12, 13 */
 @media screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
-    .bg-image img {
-        min-width: 100%;
-        min-height: 100%;
+    .bg-image::before {
+        background-size: 100%;
+        -webkit-background-size: 100%;
+        background-repeat: no-repeat;
     }
 }
 
 /* iPhone XS Max, 11 Pro Max, 12 Pro Max, 13 Pro Max */
 @media screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 3) {
-    .bg-image img {
-        min-width: 100%;
-        min-height: 100%;
+    .bg-image::before {
+        background-size: 100%;
+        -webkit-background-size: 100%;
+        background-repeat: no-repeat;
     }
 }
 
