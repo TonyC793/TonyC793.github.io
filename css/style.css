@@ -185,6 +185,29 @@ body {
 }
 
 
+/* .bg-image::before {
+    content: "";
+    background-image: inherit;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+} */
+
+/* Add this media query to target iOS devices (iPhone and iPad) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    .bg-image::before {
+        background-attachment: scroll;
+    }
+}
+
+
+
 
 .overlay-dark, .overlay-dark20, .overlay-dark60, .overlay-dark80, .overlay-dark90, .overlay-light, .overlay-light80 {
     position: relative;
