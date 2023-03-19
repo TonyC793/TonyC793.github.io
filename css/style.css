@@ -173,22 +173,22 @@ body {
 
 
 .bg-image {
-    position: relative;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 .bg-image::before {
-    content: "";
-    /* position: fixed; */
+    /* content: ""; */
+    position: relative;
     /* top: 0;
     left: 0;
     width: 100vw;
     height: 100%; */
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     z-index: -1;
 }
 
