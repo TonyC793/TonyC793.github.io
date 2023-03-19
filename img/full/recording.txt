@@ -12,3 +12,7 @@
 PC端一切正常，但在其他平台有几大问题：
 1.backgroud的图片，即便在安卓上很清晰，也只有局部，可能因为清晰度，可能因为CSS没有自适应大小。安卓上看不了intro视频。
 2.background的图片在iPhone和iPad很模糊，而且只有局部。IOS只有在iPad的Safari浏览器才看得到intro视频，Google浏览器不行。
+
+奇怪的点：
+1.intro视频只能在那种条件运行
+2.安卓上看到每张background图都是显示的正中间部分，除了parallax狗那张。但这张没什么特别，和前一张static，后一张也scroll的都很像。
