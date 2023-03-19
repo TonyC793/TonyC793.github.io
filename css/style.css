@@ -151,15 +151,9 @@ body {
 
 .bg-cover-section, .small-bg-cover-section {
 
-
-/* -webkit-background- is the only thing changed compared to original */
-
-
     background-size: cover;
     background-position: top center;
 
-    -webkit-background-size: cover;
-    -webkit-background-position: top center;
     
 }
 
@@ -175,29 +169,11 @@ body {
 
     background-position: center center;
     background-repeat: no-repeat;
-
     background-size: cover;
     background-attachment: fixed;
 
-    -webkit-background-size: cover;
-    -webkit-background-position: center center;
-    -webkit-background-attachment: fixed;
 }
 
-
-/* .bg-image::before {
-    content: "";
-    background-image: inherit;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-} */
 
 /* Add this media query to target iOS devices (iPhone and iPad) */
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
