@@ -150,7 +150,9 @@ body {
 }
 
 .bg-cover-section, .small-bg-cover-section {
+    -webkit-background-size: cover;
     background-size: cover;
+    -webkit-background-position: top center;
     background-position: top center;
 }
 
@@ -163,8 +165,10 @@ body {
 }
 
 .bg-image {
+    -webkit-background-position: center center;
     background-position: center center;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
 }
