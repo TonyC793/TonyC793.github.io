@@ -1966,18 +1966,19 @@ form label.error {
 
 
 .intro-media {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+        height: 100vh;
     position: absolute;
     display: block;
     top: 0;
     left: 0;
+
 }
 
 /* For tablets (e.g. iPad) */
 @media (min-width: 768px) and (max-width: 1024px) {
     .intro-media {
-        height: 80vh;
+        height: 80%;
         /* Adjust styles for tablets here */
     }
 }
@@ -1985,7 +1986,7 @@ form label.error {
 /* For mobile phones (e.g. iPhone) */
 @media (max-width: 767px) {
     .intro-media {
-        height: 60vh;
+        height: 60%;
         /* Adjust styles for mobile phones here */
     }
 }
