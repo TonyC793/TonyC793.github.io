@@ -225,10 +225,9 @@ body {
   }
   
   .bg-image-highres {
-    background-size: cover;
+    background-size: contain;
   }
   
-
 
 
 
