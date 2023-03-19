@@ -234,6 +234,7 @@ body {
     object-fit: cover; */
     background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     z-index: -1;
     /* box-shadow: none; */
@@ -318,8 +319,11 @@ body {
 /* iPad Pro 10.5", Air 3 */
 @media screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
     .bg-image::before {
-        background-size: 100%;
-        -webkit-background-size: 100%;
+        background-size: cover;
+        /* min-width: 100%;
+        min-height:100%; */
+        /* background-size: 100%;
+        -webkit-background-size: 100%; */
         background-repeat: no-repeat;
     }
 }
@@ -328,8 +332,11 @@ body {
 /* iPad Pro 11", Air 4 */
 @media screen and (min-device-width: 834px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) {
 .bg-image::before {
-        background-size: 100%;
-        -webkit-background-size: 100%;
+        background-size: cover;
+        /* min-width: 100%;
+        min-height:100%; */
+        /* background-size: 100%;
+        -webkit-background-size: 100%; */
         background-repeat: no-repeat;
     }
 }
@@ -338,8 +345,11 @@ body {
  /* iPad Pro 12.9" (1st, 2nd, 3rd, 4th, 5th generation) */
 @media screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
 .bg-image::before {
-        background-size: 100%;
-        -webkit-background-size: 100%;
+        background-size: cover;
+        /* min-width: 100%;
+        min-height:100%; */
+        /* background-size: 100%;
+        -webkit-background-size: 100%; */
         background-repeat: no-repeat;
     }
 }
@@ -347,8 +357,11 @@ body {
  /* iPad Pro 12.9" (6th generation)  */
 @media screen and (min-device-width: 1024px) and (max-device-width: 1392px) and (-webkit-min-device-pixel-ratio: 2) {
 .bg-image::before {
-        background-size: 100%;
-        -webkit-background-size: 100%;
+        background-size: cover;
+        /* min-width: 100%;
+        min-height:100%; */
+        /* background-size: 100%;
+        -webkit-background-size: 100%; */
         background-repeat: no-repeat;
     }
 }
