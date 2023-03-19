@@ -171,21 +171,20 @@ body {
 
 
 
-
 .bg-image {
-    background-position: center center;
+    position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 .bg-image::before {
-    /* content: ""; */
-    position: relative;
-    /* top: 0;
+    content: "";
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 100vw;
-    height: 100%; */
+    width: 100%;
+    height: 100%;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -196,8 +195,8 @@ body {
 /* For iPad Pro Max in landscape */
 @media screen and (min-device-width: 2048px) and (max-device-width: 2732px) and (orientation: landscape) {
     .bg-image::before {
-        background-size: contain;
-        -webkit-background-size: contain;
+        background-size: 100%;
+        -webkit-background-size: 100%;
         background-repeat: no-repeat;
     }
 }
@@ -205,8 +204,8 @@ body {
 /* For iPad Pro Max in portrait */
 @media screen and (min-device-width: 2048px) and (max-device-width: 2732px) and (orientation: portrait) {
     .bg-image::before {
-        background-size: contain;
-        -webkit-background-size: contain;
+        background-size: 100%;
+        -webkit-background-size: 100%;
         background-repeat: no-repeat;
     }
 }
