@@ -196,8 +196,8 @@ body {
 /* For iPad Pro Max in landscape */
 @media screen and (min-device-width: 2048px) and (max-device-width: 2732px) and (orientation: landscape) {
     .bg-image::before {
-        background-size: 100%;
-        -webkit-background-size: 100%;
+        background-size: contain;
+        -webkit-background-size: contain;
         background-repeat: no-repeat;
     }
 }
@@ -205,8 +205,8 @@ body {
 /* For iPad Pro Max in portrait */
 @media screen and (min-device-width: 2048px) and (max-device-width: 2732px) and (orientation: portrait) {
     .bg-image::before {
-        background-size: 100%;
-        -webkit-background-size: 100%;
+        background-size: contain;
+        -webkit-background-size: contain;
         background-repeat: no-repeat;
     }
 }
