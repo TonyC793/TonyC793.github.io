@@ -236,10 +236,10 @@ body {
     object-fit: cover;
     /* background-position: center center; */
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     /* background-size: cover; */
     z-index: -1;
-    /* box-shadow: none; */
+    box-shadow: none;
 }
 
 /* For iPad Pro Max in landscape */
