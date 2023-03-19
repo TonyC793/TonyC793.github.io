@@ -177,7 +177,7 @@ body {
 
 .bg-image::before {
     content: "";
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -189,6 +189,20 @@ body {
 }
 
 
+
+/* For iPad Pro Max in landscape */
+@media screen and (min-device-width: 2048px) and (max-device-width: 2732px) and (orientation: landscape) {
+    .bg-image::before {
+        background-size: 100%;
+    }
+}
+
+/* For iPad Pro Max in portrait */
+@media screen and (min-device-width: 2048px) and (max-device-width: 2732px) and (orientation: portrait) {
+    .bg-image::before {
+        background-size: 100%;
+    }
+}
 
 /* For tablets and smaller devices */
 @media (max-width: 768px) {
