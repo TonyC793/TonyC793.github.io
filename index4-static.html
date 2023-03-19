@@ -102,6 +102,27 @@
                 <!--Static Hero-->
                 <div class="intro-media bg-image overlay-dark20" data-background-img="img/full/34.jpg"></div>
 
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                      var bgImageDiv = document.getElementById("bg-image-div");
+                  
+                      // Check if the current device is high resolution
+                      if (window.devicePixelRatio > 1) {
+                        // High resolution device
+                        bgImageDiv.classList.add("bg-image-highres");
+                      } else {
+                        // Normal resolution device
+                        bgImageDiv.classList.add("bg-image");
+                      }
+                    });
+                </script>
+
+
+
+
+
+
                 <div class="intro-caption-waper dark-bg">
                     <div class="intro-full-height container">
                         <div class="intro-content">
@@ -109,7 +130,7 @@
                                 <div class="intro-img-circle">
                                     <img src="img/avatar01.jpg" alt="avatar01" />
                                 </div>
-                                <h1 class="intro-title mb-10"><span class="text-light">Hi!, 2050</span> Anthony</h1>
+                                <h1 class="intro-title mb-10"><span class="text-light">Hi!, 2051</span> Anthony</h1>
                                 <h6 class="page-title-alt color mb-45">Web Designer & Developer</h6>
                                 <a class="btn btn-lg btn-white scroll-down" href="#Statement1">Go My Resume</a>
                             </div>
