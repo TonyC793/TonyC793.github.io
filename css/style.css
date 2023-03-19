@@ -171,6 +171,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    -webkit-background-size: cover;
+    -webkit-background-attachment: fixed;
 
 }
 
@@ -182,6 +184,8 @@ body {
     .bg-image {
         background-size: 100%;
         background-attachment: fixed;
+        -webkit-background-size: 100%;
+        -webkit-background-attachment: fixed;
     }
 }
 
@@ -190,6 +194,8 @@ body {
     .bg-image {
         background-size: 100%;
         background-attachment: fixed;
+        -webkit-background-size: 100%;
+        -webkit-background-attachment: fixed;
     }
 }
 
