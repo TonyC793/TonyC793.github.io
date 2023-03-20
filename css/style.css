@@ -185,7 +185,10 @@ body {
   }
   .bg-image-highres {
     background-position: center center;
-    background-size: contain;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 20%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     z-index: -1;
