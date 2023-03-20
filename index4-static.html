@@ -108,22 +108,18 @@
 
                 <script>
                     document.addEventListener("DOMContentLoaded", function() {
-                    var bgImageDiv = document.getElementById("bg-image-div");
-
-                    // Check if the current device is high resolution
-                    if (window.devicePixelRatio > 1) {
+                      var bgImageDiv = document.getElementById("bg-image-div");
+                  
+                      // Check if the current device is high resolution
+                      if (window.devicePixelRatio > 1) {
                         // High resolution device
                         bgImageDiv.classList.add("bg-image-highres");
-                    } else {
+                      } else {
                         // Normal resolution device
                         bgImageDiv.classList.add("bg-image");
-                    }
-
-                    // Set the background image using the data-background-img attribute
-                    var imageUrl = bgImageDiv.getAttribute("data-background-img");
-                    bgImageDiv.style.backgroundImage = "url('" + imageUrl + "')";
+                      }
                     });
-                </script>
+                  </script>
 
 
 
