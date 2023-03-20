@@ -188,7 +188,7 @@ body {
   }
   
   .bg-image-highres {
-    background-size: contain;
+    background-size: 80%;
 
   }
 
