@@ -188,7 +188,8 @@ body {
   }
   
   .bg-image-highres {
-    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
 
