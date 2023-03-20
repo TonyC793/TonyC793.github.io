@@ -169,14 +169,14 @@ body {
 
 
 
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+.bg-image, .bg-image-highres {
+    position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   
-  .bg-image, .bg-image-highres {
+  .bg-image::before, .bg-image-highres::before {
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
@@ -187,15 +187,14 @@ html, body {
     z-index: -1;
   }
   
-  .bg-image {
+  .bg-image::before {
     background-size: cover;
-    background-attachment: fixed;
   }
   
-  .bg-image-highres {
+  .bg-image-highres::before {
     background-size: contain;
   }
-
+  
 
 
 
