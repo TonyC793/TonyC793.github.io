@@ -192,10 +192,12 @@ html, body {
   
   .bg-image {
     background-size: cover;
+    background-repeat: no-repeat;
   }
   
   .bg-image-highres {
     background-size: contain;
+    background-repeat: no-repeat;
   }
 
 
