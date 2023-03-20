@@ -185,10 +185,11 @@ body {
   .bg-image {
     background-size: cover;
     background-attachment: fixed;
+
   }
   
   .bg-image-highres {
-    background-size: 80%;
+    background-size: 20%;
 
   }
 
