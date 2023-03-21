@@ -1,5 +1,19 @@
-﻿$(function () {
+$(function () {
     "use strict";
+
+
+    // Add an event listener to the toggle button
+    // document.querySelector('#dark-mode-toggle').addEventListener('click', function() {
+    // Toggle the "dark-mode" class on the body element
+    // document.body.classList.toggle('dark-mode');
+    // });
+
+    // document.querySelectorAll('img[data-src^="img/full"]').forEach(function(img) {
+    //     img.src = img.getAttribute('data-src');
+    //     img.classList.add('keep-original-color');
+    //   });
+
+
 
     $(document).ready(function () {
         init_scroll();

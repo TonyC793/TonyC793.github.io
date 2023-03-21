@@ -54,6 +54,60 @@
 /*-------------------------------------------------------------------------------------------*/
 
 /* General Style   ||-------------------*/
+
+
+
+
+
+
+
+/* Light mode styles */
+/* body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+a {
+  color: #0088cc;
+} */
+
+/* Dark mode styles */
+/* body.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.dark-mode a {
+  color: #66b3ff;
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
+  color: #ffffff;
+}
+
+body.dark-mode p, body.dark-mode li, body.dark-mode span, body.dark-mode label, body.dark-mode input {
+  filter: invert(1);
+}
+
+body.dark-mode p, body.dark-mode li, body.dark-mode span, body.dark-mode label, body.dark-mode input, body.dark-mode a {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+body.dark-mode hr {
+  border-top-color: #f2f2f2;
+}
+
+body.dark-mode img:not(.keep-original-color), body.dark-mode video {
+  filter: invert(1);
+}
+
+ */
+
+
+
+
+
+
 body {
     color: #666666;
     font-family: 'Open Sans', sans-serif;

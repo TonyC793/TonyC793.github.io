@@ -1,6 +1,11 @@
 ﻿$(function () {
     "use strict";
 
+
+
+
+
+
     $(document).ready(function () {
         init_scroll();
         int_introHeight();
